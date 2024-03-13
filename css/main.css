@@ -80,7 +80,7 @@ header nav ul li {
 	text-transform: uppercase;
 	list-style: none;
 	width: 100%;
-	padding-top: 15px;
+	padding: 10px 0;
 }
 
 header nav ul li a {
@@ -163,7 +163,11 @@ footer span {
 }
 
 /*** Tablet Styles***/
-@media (min-width: 768px){
+@media all and (min-width: 768px){
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
 	.section-two{
 		border-left: 5px solid #EEE;
 		border-right: 5px solid #EEE;
@@ -179,8 +183,29 @@ footer span {
 }
 
 /*** Desktop Styles ***/
-@media (min-width: 1200px){
+@media all and (min-width: 1200px){
 	body {
 		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header h1 {
+		width: 30%;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 21%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
 	}
 }
